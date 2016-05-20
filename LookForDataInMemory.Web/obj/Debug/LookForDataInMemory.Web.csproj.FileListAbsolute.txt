@@ -1,0 +1,6 @@
+E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\bin\LookForDataInMemory.Web.dll.config
+E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\bin\LookForDataInMemory.Web.dll
+E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\bin\LookForDataInMemory.Web.pdb
+E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\obj\Debug\LookForDataInMemory.Web.csprojResolveAssemblyReference.cache
+E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\obj\Debug\LookForDataInMemory.Web.dll
+E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\obj\Debug\LookForDataInMemory.Web.pdb

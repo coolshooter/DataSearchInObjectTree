@@ -1,0 +1,13 @@
+E:\__SERGE\_Serge\_H projects\__Experiments\LookForDataInMemory\LookForDataInMemory.Core\bin\Debug\LookForDataInMemory.Core.dll
+E:\__SERGE\_Serge\_H projects\__Experiments\LookForDataInMemory\LookForDataInMemory.Core\bin\Debug\LookForDataInMemory.Core.pdb
+E:\__SERGE\_Serge\_H projects\__Experiments\LookForDataInMemory\LookForDataInMemory.Core\obj\Debug\LookForDataInMemory.Core.dll
+E:\__SERGE\_Serge\_H projects\__Experiments\LookForDataInMemory\LookForDataInMemory.Core\obj\Debug\LookForDataInMemory.Core.pdb
+E:\__SERGE\_Serge\_H projects\__Experiments\LookForDataInMemory\LookForDataInMemory.Core\obj\Debug\LookForDataInMemory.Core.csprojResolveAssemblyReference.cache
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Core\bin\Debug\LookForDataInMemory.Core.dll
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Core\bin\Debug\LookForDataInMemory.Core.pdb
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Core\obj\Debug\LookForDataInMemory.Core.dll
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Core\obj\Debug\LookForDataInMemory.Core.pdb
+E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Core\bin\Debug\LookForDataInMemory.Core.dll
+E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Core\bin\Debug\LookForDataInMemory.Core.pdb
+E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Core\obj\Debug\LookForDataInMemory.Core.dll
+E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Core\obj\Debug\LookForDataInMemory.Core.pdb
