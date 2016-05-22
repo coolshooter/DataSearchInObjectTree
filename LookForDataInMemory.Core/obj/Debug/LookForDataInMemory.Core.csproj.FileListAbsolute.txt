@@ -11,3 +11,4 @@ E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\Look
 E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Core\bin\Debug\LookForDataInMemory.Core.pdb
 E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Core\obj\Debug\LookForDataInMemory.Core.dll
 E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Core\obj\Debug\LookForDataInMemory.Core.pdb
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Core\bin\Debug\LookForDataInMemory.Core.XML

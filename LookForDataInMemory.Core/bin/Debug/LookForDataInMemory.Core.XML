@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LookForDataInMemory.Core</name>
+    </assembly>
+    <members>
+        <member name="T:LookForDataInMemory.Core.Engine">
+            <summary>
+            Движок, который ищет указанный объект в указанном объекте и вложенных в него.
+            </summary>
+        </member>
+        <member name="M:LookForDataInMemory.Core.Engine.Find(System.Object,System.Object,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Ищет объект внутри объекта.
+            Если два пути содержат одни и те же объекты в середине, то
+            будет возвращен только один из них в целях оптимизации поиска.
+            </summary>
+            <param name="what">То, что ищем.</param>
+            <param name="whereRoot">То, в чем ищем.</param>
+            <param name="byRef">Сравнивать ли объекты по ссылке.</param>
+            <param name="softSearch">Смягчить ли поиск, т.е. приводить ли 
+            типы в том числе к string при сравнении и искать ли внутри текста
+            (без учета регистра к тому же).</param>
+        </member>
+        <member name="M:LookForDataInMemory.Core.Engine.FindInner(System.Object,System.Object,System.Int32,System.Boolean,System.Boolean,System.String,System.Collections.Generic.List{System.Object})">
+            <summary>
+            Ищет объект внутри объекта.
+            Если два пути содержат одни и те же объекты в середине, то
+            будет возвращен только один из них в целях оптимизации поиска.
+            </summary>
+            <param name="what">То, что ищем.</param>
+            <param name="whereRoot">То, в чем ищем.</param>
+            <param name="byRef">Сравнивать ли объекты по ссылке.</param>
+            <param name="softSearch">Смягчить ли поиск, т.е. приводить ли 
+            типы в том числе к string при сравнении и искать ли внутри текста
+            (без учета регистра к тому же).</param>
+            <param name="path">Текущий путь. При первом вызове метода не указывается.</param>
+            <param name="checkedObjects">Чтобы избежать зацикливания и повторов.
+            При первом вызове метода не указывается.
+            Заполняется внутри.</param>
+        </member>
+        <member name="M:LookForDataInMemory.Core.Engine.AreObjectsEqual(System.Object,System.Object,System.Boolean,System.Boolean)">
+            <summary>
+            TODO: если ищется объект простого типа, то смысла сравнивать 
+            сложный.ToString() с ним мало, но не знаю, улучшит ли это скорость алгоритма.
+            </summary>
+        </member>
+        <member name="F:LookForDataInMemory.Core.FindResult.CheckedPaths">
+            <summary>
+            Не подошедшие пути.
+            </summary>
+        </member>
+    </members>
+</doc>

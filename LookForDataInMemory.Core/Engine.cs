@@ -43,11 +43,35 @@ namespace LookForDataInMemory.Core
 		/// <param name="softSearch">Смягчить ли поиск, т.е. приводить ли 
 		/// типы в том числе к string при сравнении и искать ли внутри текста
 		/// (без учета регистра к тому же).</param>
+		public static FindResult Find(object what, object whereRoot,
+			int depth = 10,
+			bool byRef = false,
+			bool softSearch = true)
+		{
+			var result = FindInner(what, whereRoot, depth, byRef, softSearch);
+			result.SearchValue = what;
+
+			result.PrepareResults();
+
+			return result;
+		}
+
+		/// <summary>
+		/// Ищет объект внутри объекта.
+		/// Если два пути содержат одни и те же объекты в середине, то
+		/// будет возвращен только один из них в целях оптимизации поиска.
+		/// </summary>
+		/// <param name="what">То, что ищем.</param>
+		/// <param name="whereRoot">То, в чем ищем.</param>
+		/// <param name="byRef">Сравнивать ли объекты по ссылке.</param>
+		/// <param name="softSearch">Смягчить ли поиск, т.е. приводить ли 
+		/// типы в том числе к string при сравнении и искать ли внутри текста
+		/// (без учета регистра к тому же).</param>
 		/// <param name="path">Текущий путь. При первом вызове метода не указывается.</param>
 		/// <param name="checkedObjects">Чтобы избежать зацикливания и повторов.
 		/// При первом вызове метода не указывается.
 		/// Заполняется внутри.</param>
-		public static FindResult Find(object what, object whereRoot, 
+		static FindResult FindInner(object what, object whereRoot, 
 			int maxItemsCountInPath = 10, 
 			bool byRef = false,
 			bool softSearch = true,
@@ -59,7 +83,7 @@ namespace LookForDataInMemory.Core
 			if (string.IsNullOrEmpty(path))
 			{
 				/// создаем объект, содержащий текущий root для поиска в нем
-				var res = Find(what, new { Root = whereRoot }, maxItemsCountInPath,
+				var res = FindInner(what, new { Root = whereRoot }, maxItemsCountInPath,
 					byRef, softSearch, ".", checkedObjects);
 
 				return res;
@@ -109,7 +133,7 @@ namespace LookForDataInMemory.Core
 
 							if (IsAllowedType(propVal.GetType()))
 							{
-								var res = Find(what, propVal, maxItemsCountInPath,
+								var res = FindInner(what, propVal, maxItemsCountInPath,
 									byRef, softSearch, newPath, checkedObjects);
 
 								result.AddFrom(res);
@@ -139,7 +163,7 @@ namespace LookForDataInMemory.Core
 									{
 										result.CheckedPaths.Add(itemPath);
 
-										var res = Find(what, item, maxItemsCountInPath,
+										var res = FindInner(what, item, maxItemsCountInPath,
 											byRef, softSearch,
 											itemPath, checkedObjects);
 
@@ -153,8 +177,6 @@ namespace LookForDataInMemory.Core
 					}
 				}
 			}
-
-			result.PrepareResults();
 
 			return result;
 		}

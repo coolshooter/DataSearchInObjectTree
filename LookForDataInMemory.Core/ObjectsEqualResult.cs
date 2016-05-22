@@ -13,10 +13,11 @@ namespace LookForDataInMemory.Core
 
 		public string TunePath(string path)
 		{
-			if (ContainsText)
-				return path + " (в тексте)";
-			else
-				return path;
+			return path;
+			//if (ContainsText)
+			//	return path + " (в тексте)";
+			//else
+			//	return path;
 		}
 	}
 }

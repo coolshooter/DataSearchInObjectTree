@@ -4,3 +4,12 @@ E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\Look
 E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\obj\Debug\LookForDataInMemory.Web.csprojResolveAssemblyReference.cache
 E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\obj\Debug\LookForDataInMemory.Web.dll
 E:\__SERGE\_Serge\_H projects\_LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\obj\Debug\LookForDataInMemory.Web.pdb
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\bin\LookForDataInMemory.Web.dll.config
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\bin\LookForDataInMemory.Web.dll
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\bin\LookForDataInMemory.Web.pdb
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\obj\Debug\LookForDataInMemory.Web.csprojResolveAssemblyReference.cache
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\obj\Debug\LookForDataInMemory.Web.dll
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\obj\Debug\LookForDataInMemory.Web.pdb
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\bin\LookForDataInMemory.Core.dll
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\bin\LookForDataInMemory.Core.pdb
+P:\__My Projects\LookForDataInMemory Root\LookForDataInMemory\LookForDataInMemory.Web\bin\LookForDataInMemory.Core.xml

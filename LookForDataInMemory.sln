@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LookForDataInMemory.Wpf", "LookForDataInMemory.Wpf\LookForDataInMemory.Wpf.csproj", "{3CFB0597-169D-43B6-9738-9CBED7BE2B1A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LookForDataInMemory.Core", "LookForDataInMemory.Core\LookForDataInMemory.Core.csproj", "{3D3B4273-2675-404C-AA18-FC08AB46E565}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LookForDataInMemory.Web", "LookForDataInMemory.Web\LookForDataInMemory.Web.csproj", "{5EE2D1A7-F0BE-431B-954A-B09376F1A8D5}"
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3CFB0597-169D-43B6-9738-9CBED7BE2B1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3CFB0597-169D-43B6-9738-9CBED7BE2B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3CFB0597-169D-43B6-9738-9CBED7BE2B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3CFB0597-169D-43B6-9738-9CBED7BE2B1A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3D3B4273-2675-404C-AA18-FC08AB46E565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3D3B4273-2675-404C-AA18-FC08AB46E565}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D3B4273-2675-404C-AA18-FC08AB46E565}.Release|Any CPU.ActiveCfg = Release|Any CPU

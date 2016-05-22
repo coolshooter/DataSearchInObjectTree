@@ -8,6 +8,7 @@ namespace LookForDataInMemory.Core
 {
 	public class FindResult
 	{
+		public object SearchValue = null;
 		public List<string> Paths = new List<string>();
 
 		/// <summary>
@@ -21,6 +22,16 @@ namespace LookForDataInMemory.Core
 				Paths = new List<string>();
 
 			Paths = Paths.OrderBy(r => r.Length).ToList();
+
+			for (int i = 0; i < Paths.Count; i++)
+			{
+				if (Paths[i].Length > 5)
+					Paths[i] = Paths[i].Substring(5);
+			}
+
+			for (int i = 0; i < CheckedPaths.Count; i++)
+				if (CheckedPaths[i].Length > 5)
+					CheckedPaths[i] = CheckedPaths[i].Substring(5);
 		}
 
 		public void AddFrom(FindResult source)
