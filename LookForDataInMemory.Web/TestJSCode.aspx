@@ -15,6 +15,27 @@
 
 			findAndAlertObjectDifference(a, b);
 		}
+
+		function test3()
+		{
+			var what = 'Paris';
+			var where = [
+				{
+					Id: 1,
+					Name: '[Moscow]'
+				},
+				{
+					Id: 2,
+					Name: '[Paris]'
+				}];
+
+			var result = findValue(what, where, false, 3);
+			
+			if (result.length > 0)
+				alert("Первый путь из найденных: " + result[0].path);
+			else
+				alert("Ничего не нашли");
+		}
 	</script>
 </head>
 <body>
@@ -27,6 +48,8 @@
 		<br />
 		<br />
 		<button id="btn2" onclick="test2();">Найти разницу между этими кнопками</button>
+		<br />
+		<button id="btn3" onclick="test3();">Найти значение</button>
 		<br />
 		<br />
 		Пользовательский скрипт для сравнения двух объектов может иметь такой вид:

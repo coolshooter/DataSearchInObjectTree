@@ -20,8 +20,6 @@
 	findAndAlertObjectDifference(a, b);
 }
 
-/// пока что находит только первую разницу среди свойств, присутствующих
-/// в первом объекте
 function findAndAlertObjectDifference(a, b)
 {
 	var state1 = getStateDictionary(a);
@@ -38,9 +36,9 @@ function findAndAlertStateDifference(state1, state2)
 	if (res.length > 0)
 	{
 		if (res.length > 5)
-			text += "Первые 5 результатов:\n";
+			text += "Первые 5 отличий:\n";
 		else
-			text += "Результат(ы):\n"
+			text += "Отличия:\n"
 
 		for (var i = 0; i < res.length && i < 5; i++)
 		{
@@ -63,8 +61,6 @@ function findAndAlertStateDifference(state1, state2)
 	}
 }
 
-/// пока что находит только первую разницу среди свойств, присутствующих
-/// в первом списке
 function getStateDifference(state1, state2)
 {
 	var found = false;
@@ -103,11 +99,106 @@ function getStateDictionary(target)
 	for (p in target)
 	{
 		dict.push({
-			key: p != null ? p.toString() : "",
+			key: p,
 			value: target[p] != null ? target[p].toString() : ""
 		});
 	}
 
 	return dict;
 }
+
+//---------------------------------------------
+
+function findValue(what, where, isExactComparison, maxDepth)
+{
+	var result = new Array();
+	findValueInner(what, where, result, isExactComparison, maxDepth, 0, "Root");
+	return result;
+}
+
+function findValueInner(what, where, result, isExactComparison, maxDepth, depth, path)
+{
+	if (where)
+	{
+		var found = false;
+
+		if (where instanceof Array)
+		{
+			for (var i = 0; i < where.length; i++)
+			{
+				var newPath = path + "[" + i + "]";
+				var value = where[i];
+
+				found = found ||
+					compareAndPushToResult(value, what, result, isExactComparison, newPath);
+			}
+		}
+		else if (typeof where !== 'string' && !(where instanceof String))
+		{
+			for (var x in where)
+			{
+				var newPath = path + "." + x.toString();
+				var value = where[x];
+
+				found = found ||
+					compareAndPushToResult(value, what, result, isExactComparison, newPath);
+			}
+		}
+
+		depth++;
+
+		if (!found && depth < maxDepth)
+		{
+			if (where instanceof Array)
+			{
+				for (var i = 0; i < where.length; i++)
+				{
+					var newPath = path + "[" + i + "]";
+					var value = where[i];
+
+					findValueInner(what, value, result, isExactComparison, maxDepth, depth, newPath);
+				}
+			}
+			else if (typeof where !== 'string' && !(where instanceof String))
+			{
+				for (var x in where)
+				{
+					var newPath = path + "." + x.toString();
+					var value = where[x];
+
+					findValueInner(what, value, result, isExactComparison, maxDepth, depth, newPath);
+				}
+			}
+		}
+	}
+}
+
+function compareAndPushToResult(value, searchValue, result, isExactComparison, newPath)
+{
+	var found = false;
+
+	if (value)
+	{
+		if (isExactComparison)
+		{
+			if (value === searchValue)
+			{
+				result.push({ value: value, path: newPath });
+				found = true;
+			}
+		}
+		else
+		{
+			if (value.toString().indexOf(searchValue.toString()) >= 0)
+			{
+				result.push({ value: value, path: newPath });
+				found = true;
+			}
+		}
+	}
+
+	return found;
+}
+
+
 
